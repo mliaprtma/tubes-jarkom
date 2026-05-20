@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About - Tugas Besar Jaringan Komputer</title>
+
+    <style>
+
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background:#f4f6f9;
+        }
+
+        .container{
+            width:80%;
+            margin:50px auto;
+            background:white;
+            padding:40px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align:center;
+            color:#2c3e50;
+            margin-bottom:30px;
+        }
+
+        h2{
+            color:#34495e;
+            margin-top:30px;
+        }
+
+        p{
+            color:#555;
+            line-height:1.8;
+            font-size:17px;
+        }
+
+        ul{
+            margin-top:10px;
+        }
+
+        li{
+            margin-bottom:10px;
+            font-size:16px;
+            color:#444;
+        }
+
+        .box{
+            margin-top:30px;
+            padding:20px;
+            border-radius:10px;
+            background:#ecf0f1;
+        }
+
+        .footer{
+            text-align:center;
+            margin-top:40px;
+            color:#777;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            📡 About Project
+        </h1>
+
+        <p>
+            Project ini merupakan implementasi sistem 
+            <b>Client - Proxy - Web Server</b>
+            menggunakan Socket Programming Python.
+        </p>
+
+        <div class="box">
+
+            <h2>
+                🔹 Fitur Sistem
+            </h2>
+
+            <ul>
+                <li>HTTP Web Server berbasis TCP</li>
+
+                <li>UDP Echo Server untuk QoS Testing</li>
+
+                <li>Proxy Server dengan Cache HIT dan MISS</li>
+
+                <li>Multithreading Multi-client</li>
+
+                <li>QoS Analysis:
+                    RTT, Packet Loss, Jitter, Throughput
+                </li>
+
+                <li>Analisis paket menggunakan Wireshark</li>
+            </ul>
+
+        </div>
+
+        <div class="box">
+
+            <h2>
+                🔹 Arsitektur Sistem
+            </h2>
+
+            <p>
+                Client → Proxy → Web Server
+            </p>
+
+            <p>
+                Seluruh komunikasi HTTP harus melewati proxy server
+                dan client tidak diperbolehkan mengakses server secara langsung.
+            </p>
+
+        </div>
+
+        <div class="box">
+
+            <h2>
+                🔹 Teknologi yang Digunakan
+            </h2>
+
+            <ul>
+                <li>Python Socket Programming</li>
+
+                <li>TCP dan UDP Protocol</li>
+
+                <li>Threading</li>
+
+                <li>HTTP Protocol</li>
+
+                <li>Wireshark Network Analyzer</li>
+            </ul>
+
+        </div>
+
+        <div class="box">
+
+            <h2>
+                🔹 Tujuan Project
+            </h2>
+
+            <p>
+                Memahami implementasi komunikasi jaringan berbasis socket,
+                analisis Quality of Service (QoS),
+                serta simulasi sistem jaringan Client - Proxy - Server.
+            </p>
+
+        </div>
+
+        <div class="footer">
+
+            <p>
+                🚀 Tugas Besar Jaringan Komputer
+            </p>
+
+            <p id="time"></p>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        document.getElementById("time").innerHTML =
+            "Waktu akses: " + new Date();
+
+    </script>
+
+</body>
+</html>
